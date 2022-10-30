@@ -1,0 +1,384 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color:#1a0d34;
+    color: rgb(239, 230, 230);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.brand{
+    margin-top: -13px;
+}
+
+.brand span{
+    color: #f3c80d;
+}
+
+.menu {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    color: rgb(239, 230, 230);
+    text-decoration: none;
+}
+
+.menu .active{
+    color: #f3c80d;
+}
+
+.menu a:hover{
+    background-color: #f3c80d;
+    color: #1a0d34;
+    transition: ease-in-out .5s;
+}
+
+.info-content_subtitle{
+    margin-top: 1em;
+}
+
+.toggle-menu, 
+.info-content_subtitle,
+.info-content__sotial-network {
+    display: none;
+}
+
+.main {
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
+.main img {
+    width: 400px;
+    height: 580px;
+    min-width: 100px;
+}
+
+h1{
+    font-size: clamp(3vw, 1.5em, 3em)
+}
+span{
+    color: #f3c80d;
+}
+
+.download-my-cv,
+.project-details {
+    padding: 10px 20px;
+    background-color: #f3c80d;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px #dfb80d;
+}
+
+.download-my-cv:hover{
+    background-color: white;
+    box-shadow: none;
+}
+
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100vw;
+}
+
+.about-info{
+    grid-column: 5/10;
+    padding: 3em;
+}
+
+.about-info h2 {
+    font-size: 2em;
+    color: #1a0d34;
+}
+
+.divider {
+    height: 4px;
+    width: 60px;
+    background-color: #dfb80d;
+    margin-top: 1px;
+    margin-bottom: 2em;
+}
+
+.about p {
+    margin-bottom: 1em;
+}
+
+.portfolio, 
+.contact-section {
+    width: 100vw;
+    background-color: #1a0d34;
+} 
+
+.portfolio-headings{
+    width: 100vw;
+    padding: 1em;
+
+}
+
+.portfolio-headings h2{
+    font-size: 3em;
+    color: aliceblue;
+    justify-content: center;
+}
+
+.portfolio .container{
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card {
+    width: 300px;
+    color: aliceblue;
+    margin: 5em;
+}
+
+.card__img{
+    width: 100%;
+    height: 200px;
+    background-image: url(../imagenes/business-pug-working-on-laptop.jpg);
+    background-size: cover; 
+ }
+ 
+ .card__title h2 {
+    padding: 20px;
+ }
+
+ .card .projects-links  {
+    display: flex;
+    justify-content: space-evenly;
+ }
+
+ .card .projects-links a {
+    color:aliceblue;
+    text-decoration: none;
+ }
+
+ .card .projects-links i {
+    font-size: 1.5em;
+ }
+
+ .card .project-details {
+    margin: 0 auto;
+    margin: 1em;
+    width: 50%;
+ }
+
+ .card .project-details a {
+    text-decoration: none;
+    color:#1a0d34;;
+ }
+
+ .proyect-details-content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1em;
+ }
+
+ .contact-section {
+    background-color: #1a0d34;
+    padding: 1em;
+    width: 100vw;
+}
+
+ .contact-headings h2 {
+    font-size: 3em;
+    color: white;
+ }
+
+ .container-contact {
+    padding: 3em;
+    margin: 3em;
+    display: flex;
+ }
+
+ .contact-form {
+    margin: 5em;
+    padding: 3em;
+    justify-content: center;
+ }
+
+ .contact-form h4 {
+    color:white;
+    text-transform: uppercase;
+ }
+
+ .container-contact img {
+    width: 800px;
+    height: 600px;
+    bottom: 0px;
+ }
+
+ .form {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-top: 2em;
+ }
+
+ .form input {
+    padding: 10px 20px;
+    margin-bottom: 1em;
+    background: none;
+    border: white;
+    border-bottom: 1px solid white;
+    color: white;
+ }
+
+ .form textarea {
+    height: 150px;
+    background-color:#1a0d34;
+    color: white;
+    padding: 1.5em;
+    border: 1px solid white;
+ }
+
+ .btn-submit {
+    padding: 10px 20px;
+    background-color: #f3c80d;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px #dfb80d;
+ }
+
+ .btn-submit:hover {
+    background-color:white;
+    box-shadow: none;
+    color:#1a0d34;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+    background-color:#dfb80d;
+}
+
+.footer-content h2{
+    font-size: 3em;
+}
+
+.footer-content h5, 
+.sotial-network i{
+    font-size: 1.5em;
+}
+
+.sotial-network {
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    margin-top: 1em;
+}
+
+@media screen and (max-width: 800px) {
+
+    .menu {
+       flex-direction: column;
+       justify-content: center;
+       position: absolute;
+       top: 0;
+       left: 0;
+       height: 100vh;
+       width: 150px;
+       background-color: #6e58e8;
+       z-index: 1;
+       transform: translateX(-110%);
+       transition: all .5s ease-in-out;
+    }
+
+    .show-menu {
+        transform: translateX(0%); 
+    }
+
+    .menu li {
+        margin: 2em;
+    }
+
+    .toggle-menu{
+        display: block;
+    }
+
+    .main,
+    .about {
+        display: flex;
+        flex-direction: column-reverse; 
+    } 
+
+    .fa-bars {
+        font-size: 1.5em;
+        margin-top: -.2em;
+    }
+    .toggle-menu .fa-close {
+        font-size: 1.7em;
+        display: none;
+    }
+
+
+    .main img {
+        width:min(90%, 580px);
+        height: min(70%, 580px);
+    }
+
+    .info-content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-content__sotial-network,
+    .info-content_subtitle {
+        display: block;
+        display: flex;
+        justify-content: space-evenly
+    }
+
+    .download-my-cv,
+    .info-content__p,
+    .contact-section__img{
+        display: none;
+    }
+
+    .form {
+        width: 50vw;
+    }
+    
+}
